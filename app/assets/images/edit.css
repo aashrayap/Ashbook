@@ -1,0 +1,21 @@
+.navbar-color {
+  background-color: #3b5998; }
+
+form p {
+  float: right;
+  right: 2%; }
+
+main img {
+  width: 700px;
+  border: 3px solid black; }
+
+.about {
+  text-align: center;
+  background-color: grey;
+  padding: 0 0 1px 0;
+  border: 2px solid black; }
+
+.wrapper {
+  text-align: center; }
+
+/*# sourceMappingURL=edit.css.map */

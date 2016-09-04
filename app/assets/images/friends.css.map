@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,aAAc;EACZ,gBAAgB,EAAE,OAAO;;AAC3B,MAAO;EACN,KAAK,EAAE,KAAK;EACZ,KAAK,EAAE,EAAE;;AAGV,QAAS;EACR,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,eAAe;;AAGxB,MAAO;EACN,UAAU,EAAE,MAAM;EAClB,gBAAgB,EAAE,IAAI;EACtB,OAAO,EAAE,SAAS;EAClB,MAAM,EAAE,eAAe",
+"sources": ["friends.scss"],
+"names": [],
+"file": "friends.css"
+}
