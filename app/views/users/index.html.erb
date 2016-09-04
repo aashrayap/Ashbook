@@ -3,107 +3,103 @@
   <head>
     <title>BookBook</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="/about.css">
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   </head>
 
-<body> 
-  <header>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid navbar-color">
+  <body>
+    <header>
+    <nav class="new-navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid navbar-color nav-padding">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">
-            <p style="font-weight: strong; color: white;"> BookBook</p>
-          </a>
-      <form class="navbar-form navbar-left" role="search">
+          <div class="container-new">
+          <h1> BOOKBOOK</h1>
+        </div>
+
+      <form class="form-inlineblock topnavfloatemail">
         <div class="form-group">
-          <input  style=" height: 25px; width: 750px; float: center;" type="text" class="form-control" placeholder="Search for users">
-          <p style=" position: absolute; right: 10%; top: 10%; font-size: 20px; color: white;"> Calvin Lac</p>
-         </div>
+          <label class="nav-text-color">Email</label>
+          <input type="text" class="form-control" id="exampleInputName2" placeholder="Email">
+        <span class="nav-text-color">
+        <input type="checkbox" >Keep me logged in
+        </span>
+        </div>
+
+      </form>
+      <form class="form-inlineblock topnavfloatpassword">
+        <div class="form-group">
+          <label class="nav-text-color">Password</label>
+          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Password">
+          <p class="nav-text-color">Forgot my password</p>
+        </div>
+      </form>
+
+      <form class="form-inlineblock topnavfloatlogin">
+        <button type="submit" class="btn btn-default">Login</button>
       </form>
         </div>
       </div>
     </nav>
   </header>
+</body>
 
-    <main>
-    <div class="container">
-      <div class="image">
-        <h2 style="position: absolute; bottom: 6%; right: 45%; color: white;"> Calvin Cu Lac</h2>
-        <img src="/assets/1.jpg" style=" position: absolute; width: 15%; bottom: 0; left: 120px; border: 3px solid white;" >
-        <img src="/assets/2.jpg" style="width: 100%;">
+<main class="sec-padding container-fluid">
+  <div class="row">
+    <div class="col-md-5 col-md-offset-1 parfix">
+      <h2> Conect with all your friends!</h2>
+      <ul>
+        <li>See photos and updates in your news feed</li>
+        <li>Post your status for the world to see from your profile</li>
+        <li>Get in touch with your friends by "friending" them</li>
+        <li>Like things because youre a positive person</li>
+      </ul>
+    </div>
+    <div class="col-md-5 col-md-offset-1 parfix">
+      <h3>Create an account</h3>
+      <h4>It's free and always will be</h4>
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <td><input class="table-adjustment" type="text" placeholder="Full Name"></td>
+            </tr>
+            <tr>
+              <td><input class="table-adjustment" type="text" placeholder="Email or mobile number"></td>
+            </tr>
+            <tr>
+             <td><input class="table-adjustment" type="text" placeholder="Re-enter mail or mobile number"></td>
+            </tr>
+            <tr>
+              <td><input class="table-adjustment" type="text" placeholder="New password"></td>
+            </tr> 
+            <tr>
+              <td>
+                <select class="table-adjustment">
+                  <option>Day<option>1</option><option>2</option>
+                </select>
+                <select>
+                  <option>Month<option>Jan</option><option>Feb</option>
+                </select>
+                <select>
+                  <option>Year<option>1200</option><option>1300</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="radio">Male</td>
+            </tr>
+            <tr>
+              <td><input type="radio">Female</td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="button" class="btn btn-success">Create an account</button>
       </div>
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Timeline</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#"> About<span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Photos</a></li>
-              </form>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Friends</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-
-        <div class="about">
-          <h2> About </h2>
-        </div>
-
-        <div style="border: 2px solid black">
-        <div class="row">
-          <div class="col-md-4">
-            <h4> Basic Information</h4>
-            <ul>
-              <li>My birthday is on the 21st</li>
-              <li>blah blah blah blah blah</li>
-              <li>Im not too sure where i was born</li>
-              <li>Looking for girlfriend to buy me rune</li>
-            </ul>
-            <h4> Contact Info</h4>
-                        <table>
-              <tr>
-                <td style="padding: 0 60px 0 0;">Email</td>
-                <td>dzbballin</td>
-              </tr>
-
-              <tr>
-                <td style="padding: 0 60px 0 0;">Telephone</td>
-                <td>403 403-4033</td>
-              </tr>
-            </table>
-
-          </div>
-          <div class="col-md-6 col-md-offset-2">
-            <h4> Words to Live By</h4>
-            <p> Say i-cup real quick Say i-cup real quick Say i-cup real quick Say i-cup real quick Say i-cup real quick Say i-cup real quick Say i-cup real quick </p>
-          </div>
-          <div class="col-md-6 col-md-offset-2">
-            <h4>About Me</h4>
-            <p> vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! vape nation bro!! 
-            </p> 
-          </div>
-        </div>
-      </div>
-    </main>
-
-
-
+    </div>
+  </div>
+</main>
 
 
 

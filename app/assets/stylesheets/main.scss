@@ -1,0 +1,62 @@
+/** 
+*NAV STUFF
+*/ 
+
+.nav-padding {
+	padding-top: 45px;
+}
+
+.topnavfloatemail {
+	position: fixed;
+	top: 15%;
+	right: 35%;
+}
+
+.topnavfloatpassword {
+	position: fixed;
+	top: 15%;
+	right: 18%;
+}
+
+.topnavfloatlogin {
+	position: fixed;
+	top: 35%;
+	right: 11%;
+}
+
+.navbar-color {
+	background-color: #3b5998;
+}
+
+nav h1 {
+	padding-bottom: 10px;
+	color: white;
+}
+
+.nav-text-color {
+	color: white;
+}
+
+
+
+
+/**
+*Alignment Stuff
+*/
+
+.sec-padding {
+	margin: 100px auto;
+}
+
+.parfix {
+	padding: 60px;
+}
+
+main li {
+	margin: 10px 0 25px 0;
+	font-size: 17px;
+}
+
+.table-adjustment {
+	margin: 0 0 15px 0;
+}
