@@ -2,10 +2,8 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.new(comment_params)
     @comment.user_id=current_user.id
-    @comment.post_id=@comment.post.id
     if @comment.save
       redirect_to user_path(current_user)
-    else
     end
   end
 
@@ -13,6 +11,6 @@ class CommentsController < ApplicationController
   private
 
   def comment_params
-    params.require(:comment).permit(:body,:id)
+    params.require(:comment).permit(:body,:user_id,:post_id,:id)
   end
 end

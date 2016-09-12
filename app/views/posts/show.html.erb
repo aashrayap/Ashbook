@@ -1,0 +1,43 @@
+<%= link_to "Back to Timeline", user_path(current_user) %>
+
+<div class="col-sm-7">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Post #<%=@post.id%></h3>
+    </div>
+    <br>
+
+      <%=@post.body%>
+
+    <br>
+    <br>
+    <br>
+    <a href="" style="padding: 0 10px 0 0;">Like</a>
+
+    <div class="panel-footer">
+      <h3> Comments </h3>
+      <%@comments.each do |comments| %>
+      <div class="panel">
+        <br>
+        <%= comments.user.username %>:
+        <br>
+        <%=comments.body%>
+        <a href="" style="padding: 0 10px 0 0;">Like</a>
+        <a href="">Delete</a>
+      </div>
+      <%end%>
+    </div>
+
+    <div class="panel-footer">
+      <%=form_for @post do |p| %>
+        <%=p.fields_for :comments, Comment.new do |c| %>
+          <%= c.text_field :body %>
+          <%= c.hidden_field :post_id, value: @post.id %>
+          <%= c.hidden_field :user_id, value: current_user.id %>
+        <%end%>
+        <%=p.submit%>
+      <%end%>
+      <a href="">Delete</a>
+    </div>
+  </div>
+</div>
