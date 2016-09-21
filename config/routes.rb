@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   resource :session, :only => [:new,:create]
   resources :posts
   resources :comments, :only=> [:create]
-
+  resources :friendings, :only=> [:index,:create,:new]
 end
