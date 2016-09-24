@@ -1,0 +1,11 @@
+<div class="panel-body">
+  <%= form_for Post.new do |post| %>
+    <%= post.label :photo %>
+    <%= post.file_field :photo,:placeholder=> "Select a Photo"%>
+ </div>
+<div class="panel-footer">
+  <p>
+    <%= post.submit%>
+  <% end%>
+  </p>
+</div>

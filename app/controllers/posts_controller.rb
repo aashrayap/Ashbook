@@ -2,6 +2,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    @post.is_photo = !!params[:photo]
     @post.user_id = current_user.id
     if @post.save
       redirect_to user_path(current_user)
@@ -24,6 +25,6 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:body, :user_id, :id, :comments_attributes => [:body, :user_id, :post_id])
+    params.require(:post).permit(:body,:photo, :user_id, :id, :comments_attributes => [:body, :user_id, :post_id])
   end 
 end

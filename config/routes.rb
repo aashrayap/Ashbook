@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   resources :posts
   resources :comments, :only=> [:create]
   resources :friendings, :only=> [:index,:create,:new]
+  resources :photos
 end

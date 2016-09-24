@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160921001602) do
+ActiveRecord::Schema.define(version: 20160923185411) do
 
   create_table "comments", force: :cascade do |t|
     t.integer  "post_id"
@@ -32,8 +32,13 @@ ActiveRecord::Schema.define(version: 20160921001602) do
     t.string   "title"
     t.string   "body"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",                         null: false
+    t.datetime "updated_at",                         null: false
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
+    t.boolean  "is_photo",           default: false
   end
 
   create_table "users", force: :cascade do |t|

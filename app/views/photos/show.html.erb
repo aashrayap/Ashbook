@@ -1,0 +1,38 @@
+<div class="image">
+    <h2 style="position: absolute; bottom: 6%; right: 45%; color: white;"> Calvin Cu Lac</h2>
+    <img src="assets/1.jpg" style=" position: absolute; width: 15%; bottom: 0; left: 120px; border: 3px solid white;">
+    <img src="assets/2.jpg" style="width: 100%;">
+</div>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%=link_to "Timeline",user_path%>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Photos</a></li>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#"> Friends<span class="sr-only">(current)</span></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+  <%@posts.each do |post|%>
+    <%if !post.is_photo?%>
+    <%= image_tag post.photo.url %>
+    <%else%>
+    <%end%>
+  <%end%>
+</div>
